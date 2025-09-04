@@ -1,0 +1,35 @@
+{
+  "name": "framework-migration-tool",
+  "version": "1.0.0",
+  "description": "A comprehensive tool for migrating Selenium tests to other frameworks like Playwright and Cypress",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && cd frontend && npm install"
+  },
+  "keywords": [
+    "selenium",
+    "playwright",
+    "cypress",
+    "test-migration",
+    "automation"
+  ],
+  "author": "Framework Migration Tool",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "fs-extra": "^11.1.1",
+    "uuid": "^9.0.0",
+    "child_process": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0"
+  }
+}

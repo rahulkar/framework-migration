@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework Migration Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        .progress-bar {
+            transition: width 0.5s ease-in-out;
+        }
+        .step-indicator {
+            transition: all 0.3s ease;
+        }
+        .step-indicator.active {
+            background-color: #374151;
+            color: white;
+        }
+        .step-indicator.completed {
+            background-color: #6b7280;
+            color: white;
+        }
+        .noir-theme {
+            background-color: #f9fafb;
+            color: #111827;
+        }
+        .noir-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+        .noir-button-primary {
+            background-color: #374151;
+            border-color: #374151;
+        }
+        .noir-button-primary:hover {
+            background-color: #1f2937;
+            border-color: #1f2937;
+        }
+        .noir-button-secondary {
+            background-color: #6b7280;
+            border-color: #6b7280;
+        }
+        .noir-button-secondary:hover {
+            background-color: #4b5563;
+            border-color: #4b5563;
+        }
+    </style>
+</head>
+<body class="noir-theme">
+    <div id="app">
+        <!-- Header -->
+        <header class="gradient-bg text-white shadow-lg">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-exchange-alt text-2xl"></i>
+                        <h1 class="text-2xl font-bold">Framework Migration Tool</h1>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sm opacity-90">Convert Selenium traces to modern frameworks</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-6 py-8">
+            <!-- Step Indicator -->
+            <div class="mb-8">
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="step-indicator active flex items-center justify-center w-10 h-10 rounded-full bg-gray-300 text-gray-600 font-semibold">
+                        1
+                    </div>
+                    <div class="w-16 h-1 bg-gray-300"></div>
+                    <div class="step-indicator flex items-center justify-center w-10 h-10 rounded-full bg-gray-300 text-gray-600 font-semibold">
+                        2
+                    </div>
+                    <div class="w-16 h-1 bg-gray-300"></div>
+                    <div class="step-indicator flex items-center justify-center w-10 h-10 rounded-full bg-gray-300 text-gray-600 font-semibold">
+                        3
+                    </div>
+                    <div class="w-16 h-1 bg-gray-300"></div>
+                    <div class="step-indicator flex items-center justify-center w-10 h-10 rounded-full bg-gray-300 text-gray-600 font-semibold">
+                        4
+                    </div>
+                </div>
+                <div class="flex justify-center mt-2">
+                    <div class="flex space-x-16 text-sm text-gray-600">
+                        <span>Upload</span>
+                        <span>Analyze</span>
+                        <span>Convert</span>
+                        <span>Execute</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 1: Upload -->
+            <div id="step-upload" class="step-content">
+                <div class="max-w-2xl mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-cloud-upload-alt text-4xl text-blue-500 mb-4"></i>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-2">Upload Selenium Trace</h2>
+                            <p class="text-gray-600">Upload your seltrace.ndjson file to begin the migration process</p>
+                        </div>
+                        
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-blue-400 transition-colors">
+                            <input type="file" id="fileInput" accept=".json,.ndjson" class="hidden">
+                            <label for="fileInput" class="cursor-pointer">
+                                <i class="fas fa-file-upload text-3xl text-gray-400 mb-4"></i>
+                                <p class="text-lg text-gray-600 mb-2">Click to upload or drag and drop</p>
+                                <p class="text-sm text-gray-500">JSON or NDJSON files only</p>
+                            </label>
+                        </div>
+                        
+                        <div id="uploadProgress" class="hidden mt-4">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 0%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">Uploading and analyzing...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Analysis Results -->
+            <div id="step-analysis" class="step-content hidden">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">
+                            <i class="fas fa-chart-bar text-blue-500 mr-2"></i>
+                            Trace Analysis Results
+                        </h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div class="bg-blue-50 rounded-lg p-6 text-center">
+                                <i class="fas fa-list-ol text-3xl text-blue-500 mb-2"></i>
+                                <div class="text-2xl font-bold text-blue-600" id="totalSteps">0</div>
+                                <div class="text-sm text-gray-600">Total Steps</div>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-6 text-center">
+                                <i class="fas fa-check-circle text-3xl text-green-500 mb-2"></i>
+                                <div class="text-2xl font-bold text-green-600" id="supportedSteps">0</div>
+                                <div class="text-sm text-gray-600">Supported Steps</div>
+                            </div>
+                            <div class="bg-yellow-50 rounded-lg p-6 text-center">
+                                <i class="fas fa-percentage text-3xl text-yellow-500 mb-2"></i>
+                                <div class="text-2xl font-bold text-yellow-600" id="conversionRate">0%</div>
+                                <div class="text-sm text-gray-600">Conversion Rate</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Action Breakdown</h3>
+                            <div id="actionBreakdown" class="space-y-2">
+                                <!-- Action breakdown will be populated here -->
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button id="proceedToConvert" class="noir-button-primary hover:noir-button-primary text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                                <i class="fas fa-arrow-right mr-2"></i>
+                                Proceed to Framework Selection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Framework Selection -->
+            <div id="step-framework" class="step-content hidden">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">
+                            <i class="fas fa-cogs text-blue-500 mr-2"></i>
+                            Select Target Framework
+                        </h2>
+                        
+                        <div id="frameworkOptions" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <!-- Framework options will be populated here -->
+                        </div>
+                        
+                        <div id="languageSelection" class="hidden mb-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Select Programming Language</h3>
+                            <div id="languageOptions" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <!-- Language options will be populated here -->
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button id="startConversion" class="noir-button-primary hover:noir-button-primary text-white px-8 py-3 rounded-lg font-semibold transition-colors disabled:opacity-50" disabled>
+                                <i class="fas fa-magic mr-2"></i>
+                                Start Conversion
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Conversion Results -->
+            <div id="step-results" class="step-content hidden">
+                <div class="max-w-6xl mx-auto">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Conversion Complete
+                        </h2>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Conversion Stats -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-4">Conversion Statistics</h3>
+                                <div id="conversionStats" class="space-y-3">
+                                    <!-- Stats will be populated here -->
+                                </div>
+                                
+                                <div class="mt-6 space-y-3">
+                                    <button id="downloadTest" class="w-full noir-button-secondary hover:noir-button-secondary text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                                        <i class="fas fa-download mr-2"></i>
+                                        Download Generated Test
+                                    </button>
+                                    
+                                    <!-- Execution Options -->
+                                    <div class="bg-gray-50 rounded-lg p-4 mb-3">
+                                        <h4 class="text-sm font-semibold text-gray-700 mb-3">Execution Options</h4>
+                                        <div class="flex items-center space-x-3">
+                                            <label class="flex items-center cursor-pointer">
+                                                <input type="checkbox" id="headlessToggle" class="form-checkbox h-4 w-4 text-gray-600 rounded border-gray-300 focus:ring-gray-500">
+                                                <span class="ml-2 text-sm text-gray-700">Run in headless mode</span>
+                                            </label>
+                                            <div class="text-xs text-gray-500">
+                                                <i class="fas fa-info-circle mr-1"></i>
+                                                Headless mode runs tests without opening browser windows
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button id="executeTest" class="w-full noir-button-primary hover:noir-button-primary text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                                        <i class="fas fa-play mr-2"></i>
+                                        Execute Test
+                                    </button>
+                                    <button id="startNew" class="w-full noir-button-secondary hover:noir-button-secondary text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                                        <i class="fas fa-plus mr-2"></i>
+                                        Start New Conversion
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Generated Code Preview -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-4">Generated Test Code</h3>
+                                <div class="bg-gray-900 rounded-lg p-4 overflow-auto max-h-96">
+                                    <pre id="generatedCode" class="text-green-400 text-sm font-mono"></pre>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Execution Results -->
+                        <div id="executionResults" class="hidden mt-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                                <i class="fas fa-terminal mr-2"></i>
+                                Execution Results
+                            </h3>
+                            <div class="bg-gray-900 rounded-lg p-4">
+                                <pre id="executionOutput" class="text-white text-sm font-mono"></pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Server Logs -->
+                        <div id="serverLogs" class="hidden mt-8">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-gray-800">
+                                    <i class="fas fa-server mr-2"></i>
+                                    Server Logs
+                                </h3>
+                                <button id="refreshLogs" class="noir-button-secondary hover:noir-button-secondary text-white px-3 py-1 rounded text-sm transition-colors">
+                                    <i class="fas fa-sync-alt mr-1"></i>
+                                    Refresh
+                                </button>
+                            </div>
+                            <div class="bg-gray-900 rounded-lg p-4 max-h-64 overflow-y-auto">
+                                <pre id="serverLogsOutput" class="text-green-400 text-sm font-mono"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
