@@ -179,12 +179,14 @@ app.post('/api/upload', upload.single('trace'), async (req, res) => {
     let supportedSteps = 0;
     const actionTypes = {};
     
+    // Actions that are automatically handled by modern frameworks
+    const autoHandledActions = ['findElement', 'findElements', 'ImplicitWait.set', 'Navigation.to'];
+    const supportedActions = ['get', 'click', 'sendKeys', 'clear', 'getTagName', 'Navigation.refresh', 'Navigation.back', 'Navigation.forward'];
+    
     lines.forEach(line => {
       try {
         const event = JSON.parse(line);
         if (event.evt === 'step.ok') {
-          totalSteps++;
-          
           // Count action types
           if (actionTypes[event.kind]) {
             actionTypes[event.kind]++;
@@ -192,8 +194,12 @@ app.post('/api/upload', upload.single('trace'), async (req, res) => {
             actionTypes[event.kind] = 1;
           }
           
+          // Only count actions that require explicit conversion
+          if (!autoHandledActions.includes(event.kind)) {
+            totalSteps++;
+          }
+          
           // Check if action is supported
-          const supportedActions = ['get', 'click', 'sendKeys', 'clear', 'getTagName', 'Navigation.refresh', 'Navigation.back', 'Navigation.forward'];
           if (supportedActions.includes(event.kind)) {
             supportedSteps++;
           }

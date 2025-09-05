@@ -1,310 +1,155 @@
-{"@t":"2025-09-03T15:59:33.109183500Z","evt":"cdp","cdp":"agent.test","driverId":"na","sessionId":"na","testId":null,"thread":"main","message":"Agent test event","timestamp":1756915173129}
-{"@t":"2025-09-03T15:59:41.133673100Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"15186ce0","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:41.138369300Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"10000","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:41.149408600Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"15186ce0","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:41.149408600Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:41.228483300Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:41.230549200Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:42.713823700Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:42.738167100Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://example.com/","durationMs":"1508","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:42.920412100Z","evt":"selenium","action":"Navigation.refresh.start","driverId":"29f3185c","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:42.921716300Z","evt":"step.start","kind":"Navigation.refresh","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@29f3185c","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:43.426021200Z","evt":"cdp","cdp":"Navigation.refresh.completed","driverId":"29f3185c","sessionId":"na","testId":null,"thread":"main","action":"refresh","success":true,"newUrl":"https://example.com/","newPageTitle":"Example Domain","duration":-360431650185974}
-{"@t":"2025-09-03T15:59:43.431020Z","evt":"step.ok","kind":"Navigation.refresh","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@29f3185c","durationMs":"510","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:43.432044700Z","evt":"selenium","action":"Navigation.to.start","driverId":"6851b296","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:43.432044700Z","evt":"step.start","kind":"Navigation.to","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@6851b296","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:43.432044700Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:43.432044700Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.460488800Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.469495400Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"1037","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.489142600Z","evt":"cdp","cdp":"Navigation.to.completed","driverId":"6851b296","sessionId":"na","testId":null,"thread":"main","action":"to","success":true,"newUrl":"https://www.selenium.dev/selenium/web/web-form.html","newPageTitle":"Web form","duration":-360432160963812}
-{"@t":"2025-09-03T15:59:44.489142600Z","evt":"step.ok","kind":"Navigation.to","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@6851b296","durationMs":"1056","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.489142600Z","evt":"selenium","action":"Navigation.back.start","driverId":"68a5aadd","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.489142600Z","evt":"step.start","kind":"Navigation.back","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@68a5aadd","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.602583900Z","evt":"cdp","cdp":"Navigation.back.completed","driverId":"68a5aadd","sessionId":"na","testId":null,"thread":"main","action":"back","success":true,"newUrl":"https://example.com/","newPageTitle":"Example Domain","duration":-360433218340098}
-{"@t":"2025-09-03T15:59:44.603582800Z","evt":"step.ok","kind":"Navigation.back","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@68a5aadd","durationMs":"113","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.603582800Z","evt":"selenium","action":"Navigation.forward.start","driverId":"6076c66","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.603582800Z","evt":"step.start","kind":"Navigation.forward","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@6076c66","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.766735600Z","evt":"cdp","cdp":"Navigation.forward.completed","driverId":"6076c66","sessionId":"na","testId":null,"thread":"main","action":"forward","success":true,"newUrl":"https://www.selenium.dev/selenium/web/web-form.html","newPageTitle":"Web form","duration":-360433332613734}
-{"@t":"2025-09-03T15:59:44.766735600Z","evt":"step.ok","kind":"Navigation.forward","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@6076c66","durationMs":"163","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.789301200Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.789301200Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.864498Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.871504700Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"81","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.872516500Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.893176700Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"20","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.893176700Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-password]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.908062700Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"14","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.908062700Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-textarea]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.922234800Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"13","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.922234800Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:44.935235700Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.612938600Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.613937400Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.659475600Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.672567400Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"58","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.672567400Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-select]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.689119Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"15","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.748649900Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191392","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.810494800Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191454","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.876319Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191520","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.928386900Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191572","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:45.987522700Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191631","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.042844400Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191687","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.072029700Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191715","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.074031200Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.074031200Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.125172400Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.145353800Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"71","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.145353800Z","evt":"step.start","kind":"findElements","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: input[type='checkbox']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.158027Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191802","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.159029400Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"13","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.253245600Z","evt":"step.start","kind":"findElements","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: input[type='radio']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.268492800Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362191912","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.268492800Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"15","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.279917800Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.279917800Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.326885200Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.337883100Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"57","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.371254500Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.371254500Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.372296600Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.372296600Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.376620100Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.389375900Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.413042400Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.413042400Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"41","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.414043200Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.414043200Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"42","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.418047700Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.419042400Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.419042400Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.419042400Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.419042400Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.430182600Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.430182600Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.430182600Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"11","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.430182600Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.431174900Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.431174900Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.431174900Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.431174900Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.431174900Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.431174900Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.441505700Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"10","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.467513800Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.467513800Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"36","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.467513800Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.467513800Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"36","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.467513800Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"8d810f2","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.467513800Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"5000","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.471373800Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"8d810f2","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.471373800Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"3","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.471373800Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"7c69e1e1","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.471373800Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"10000","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.475078700Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"7c69e1e1","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.475078700Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"3","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.478111600Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.478111600Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.531946600Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.546948600Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"69","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.546948600Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.561948300Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"14","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.561948300Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:46.571093500Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"8","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.585548200Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.586734300Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.677319800Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.701562100Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://example.com/","durationMs":"114","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.724631400Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.725630900Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.939932500Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.958288500Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"232","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.958288500Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.971369700Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.997513500Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:47.997513500Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.065463100Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.084054500Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://example.com/","durationMs":"86","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.192887900Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.192887900Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.227894700Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.233862100Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://example.com/","durationMs":"40","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.294407500Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.294407500Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.419605700Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.431667900Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"137","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.431667900Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.444665300Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.444665300Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-password]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.456668Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.456668Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-textarea]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.467666200Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"10","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.467666200Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-select]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.478640Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"10","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.478640Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.489070200Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.793617700Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362194437","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.896996500Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.896996500Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.896996500Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:48.896996500Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:49.429312900Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:49.429312900Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"532","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:49.429312900Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T15:59:49.429312900Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"533","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:48.468865400Z","evt":"cdp","cdp":"agent.test","driverId":"na","sessionId":"na","testId":null,"thread":"main","message":"Agent test event","timestamp":1756915848481}
-{"@t":"2025-09-03T16:10:55.264595300Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"15186ce0","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:55.270623600Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"10000","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:55.299023200Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"15186ce0","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:55.299023200Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"28","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:55.390133600Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:55.390133600Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.430042100Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.459106700Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://example.com/","durationMs":"1067","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.595841700Z","evt":"selenium","action":"Navigation.refresh.start","driverId":"29f3185c","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.595841700Z","evt":"step.start","kind":"Navigation.refresh","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@29f3185c","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.944966700Z","evt":"cdp","cdp":"Navigation.refresh.completed","driverId":"29f3185c","sessionId":"na","testId":null,"thread":"main","action":"refresh","success":true,"newUrl":"https://example.com/","newPageTitle":"Example Domain","duration":-361105323782056}
-{"@t":"2025-09-03T16:10:56.950965100Z","evt":"step.ok","kind":"Navigation.refresh","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@29f3185c","durationMs":"354","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.950965100Z","evt":"selenium","action":"Navigation.to.start","driverId":"6851b296","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.950965100Z","evt":"step.start","kind":"Navigation.to","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@6851b296","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.950965100Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:56.950965100Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:57.802727200Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:57.823783400Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"872","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:57.837839500Z","evt":"cdp","cdp":"Navigation.to.completed","driverId":"6851b296","sessionId":"na","testId":null,"thread":"main","action":"to","success":true,"newUrl":"https://www.selenium.dev/selenium/web/web-form.html","newPageTitle":"Web form","duration":-361105679193463}
-{"@t":"2025-09-03T16:10:57.838816600Z","evt":"step.ok","kind":"Navigation.to","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@6851b296","durationMs":"887","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:57.838816600Z","evt":"selenium","action":"Navigation.back.start","driverId":"68a5aadd","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:57.838816600Z","evt":"step.start","kind":"Navigation.back","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@68a5aadd","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:57.943024700Z","evt":"cdp","cdp":"Navigation.back.completed","driverId":"68a5aadd","sessionId":"na","testId":null,"thread":"main","action":"back","success":true,"newUrl":"https://example.com/","newPageTitle":"Example Domain","duration":-361106566899057}
-{"@t":"2025-09-03T16:10:57.943024700Z","evt":"step.ok","kind":"Navigation.back","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@68a5aadd","durationMs":"104","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:57.943024700Z","evt":"selenium","action":"Navigation.forward.start","driverId":"6076c66","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:57.943024700Z","evt":"step.start","kind":"Navigation.forward","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@6076c66","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.098618500Z","evt":"cdp","cdp":"Navigation.forward.completed","driverId":"6076c66","sessionId":"na","testId":null,"thread":"main","action":"forward","success":true,"newUrl":"https://www.selenium.dev/selenium/web/web-form.html","newPageTitle":"Web form","duration":-361106671732402}
-{"@t":"2025-09-03T16:10:58.099620300Z","evt":"step.ok","kind":"Navigation.forward","driverId":"5a8d676e","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@6076c66","durationMs":"155","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.120214100Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.120214100Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.186395800Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.207536300Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"87","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.208540400Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.224697500Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"16","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.224697500Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-password]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.237827200Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.237827200Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-textarea]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.250116700Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.250116700Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.263298600Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"13","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.865898500Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.865898500Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.908972700Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.921099400Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"55","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.922100100Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-select]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.939929700Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"18","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:58.987909500Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362864631","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.044970200Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362864689","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.105454700Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362864749","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.142284Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362864785","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.199779800Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362864844","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.250866900Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362864894","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.275720Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362864924","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.275720Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.275720Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.336771400Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.355455400Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"72","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.355455400Z","evt":"step.start","kind":"findElements","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: input[type='checkbox']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.367626700Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362865011","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.367626700Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.450053600Z","evt":"step.start","kind":"findElements","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: input[type='radio']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.462880600Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362865106","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.462880600Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.473269900Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.473269900Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.516179900Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.533436600Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"60","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.560554700Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.561556300Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.561556300Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.562555700Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.567572400Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.579630800Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.604035200Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.604986200Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"42","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.604986200Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.604986200Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"43","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.608996700Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.608996700Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.609772400Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.609772400Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.609772400Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.618781200Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"9","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.618781200Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.618781200Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"9","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.618781200Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.618781200Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"10","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.619782400Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.619782400Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.619782400Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.619782400Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.619782400Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.630617300Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"10","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.641623500Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.641623500Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"23","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.641623500Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.641623500Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"24","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.641623500Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"8d810f2","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.641623500Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"5000","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.646147500Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"8d810f2","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.646147500Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"3","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.646147500Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"7c69e1e1","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.646147500Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"10000","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.646147500Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"7c69e1e1","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.646147500Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"3","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.652708900Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.652708900Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.696534100Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.701535800Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"49","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.701535800Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.716700900Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"15","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.717701200Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:10:59.725291400Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"7","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:00.679210300Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:00.680210Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:00.802889200Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:00.810171200Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://example.com/","durationMs":"130","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:00.830458Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:00.830458Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.005177400Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.013304300Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"182","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.014345600Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.026311100Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.054500800Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.054500800Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.124115700Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.141226100Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://example.com/","durationMs":"86","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.294452500Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.294452500Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.330679400Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.336144900Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://example.com/","durationMs":"42","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.389534600Z","evt":"selenium","action":"WebDriver.get.start","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.389534600Z","evt":"step.start","kind":"get","driverId":"5a8d676e","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.499685700Z","evt":"selenium","action":"WebDriver.get.end","driverId":"5a8d676e","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.519624300Z","evt":"step.ok","kind":"get","driverId":"5a8d676e","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"129","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.519624300Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.532357300Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.532357300Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-password]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.546014900Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"13","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.546014900Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-textarea]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.557871100Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.557871100Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.name: my-select]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.568252Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.569251200Z","evt":"step.start","kind":"findElement","driverId":"5a8d676e","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.580011700Z","evt":"step.ok","kind":"findElement","driverId":"5a8d676e","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:01.938459200Z","evt":"step.ok","kind":"findElements","driverId":"5a8d676e","target":"searchContext","durationMs":"362867582","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:02.538041500Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:02.538041500Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:02.538041500Z","evt":"selenium","action":"Wait.until.start","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:02.538041500Z","evt":"step.start","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:02.553375700Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:02.553375700Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"15","error":null,"testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:02.553375700Z","evt":"selenium","action":"Wait.until.end","driverId":"6e49b011","sessionId":"na","testId":null,"thread":"main"}
-{"@t":"2025-09-03T16:11:02.553375700Z","evt":"step.ok","kind":"Wait.until","driverId":"5a8d676e","target":"WebDriverWait","durationMs":"15","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:02.903688500Z","evt":"cdp","cdp":"agent.test","driverId":"na","sessionId":"na","testId":null,"thread":"main","message":"Agent test event","timestamp":1757038622918}
+{"@t":"2025-09-05T02:17:08.819420400Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"786ff0ea","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:08.823822600Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"10000","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:08.823822600Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"786ff0ea","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:08.823822600Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"4","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:08.904538Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:08.906275900Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:09.872074200Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:09.895906700Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://example.com/","durationMs":"990","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.015978200Z","evt":"selenium","action":"Navigation.refresh.start","driverId":"c4cceb","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.016641200Z","evt":"step.start","kind":"Navigation.refresh","driverId":"733fae8","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@c4cceb","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.338931100Z","evt":"cdp","cdp":"Navigation.refresh.completed","driverId":"c4cceb","sessionId":"na","testId":null,"thread":"main","action":"refresh","success":true,"newUrl":"https://example.com/","newPageTitle":"Example Domain","duration":-483876941449662}
+{"@t":"2025-09-05T02:17:10.342938Z","evt":"step.ok","kind":"Navigation.refresh","driverId":"733fae8","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@c4cceb","durationMs":"327","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.343973300Z","evt":"selenium","action":"Navigation.to.start","driverId":"5613247e","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.343973300Z","evt":"step.start","kind":"Navigation.to","driverId":"733fae8","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@5613247e","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.343973300Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.343973300Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.877573800Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.888341600Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"543","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.903223400Z","evt":"cdp","cdp":"Navigation.to.completed","driverId":"5613247e","sessionId":"na","testId":null,"thread":"main","action":"to","success":true,"newUrl":"https://www.selenium.dev/selenium/web/web-form.html","newPageTitle":"Web form","duration":-483877269008598}
+{"@t":"2025-09-05T02:17:10.903223400Z","evt":"step.ok","kind":"Navigation.to","driverId":"733fae8","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@5613247e","durationMs":"559","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.903223400Z","evt":"selenium","action":"Navigation.back.start","driverId":"74bdfa0b","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:10.903223400Z","evt":"step.start","kind":"Navigation.back","driverId":"733fae8","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@74bdfa0b","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.052810500Z","evt":"cdp","cdp":"Navigation.back.completed","driverId":"74bdfa0b","sessionId":"na","testId":null,"thread":"main","action":"back","success":true,"newUrl":"https://example.com/","newPageTitle":"Example Domain","duration":-483877828558548}
+{"@t":"2025-09-05T02:17:11.052810500Z","evt":"step.ok","kind":"Navigation.back","driverId":"733fae8","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@74bdfa0b","durationMs":"149","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.053811800Z","evt":"selenium","action":"Navigation.forward.start","driverId":"5d37aa0f","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.053811800Z","evt":"step.start","kind":"Navigation.forward","driverId":"733fae8","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@5d37aa0f","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.286388500Z","evt":"cdp","cdp":"Navigation.forward.completed","driverId":"5d37aa0f","sessionId":"na","testId":null,"thread":"main","action":"forward","success":true,"newUrl":"https://www.selenium.dev/selenium/web/web-form.html","newPageTitle":"Web form","duration":-483877978765214}
+{"@t":"2025-09-05T02:17:11.286388500Z","evt":"step.ok","kind":"Navigation.forward","driverId":"733fae8","target":"org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation@5d37aa0f","durationMs":"233","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.309525Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.310523200Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.389242600Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.394244800Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"84","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.395243600Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.415618600Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"20","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.415618600Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-password]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.426620200Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.427617700Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-textarea]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.440276500Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"13","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.440276500Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:11.453725500Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.049766Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.049766Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.105401800Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.125632700Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"75","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.125632700Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-select]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.138775500Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"13","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.187375Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636150","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.240412700Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636203","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.304780100Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636268","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.354214500Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636317","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.414172Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636377","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.467205300Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636431","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.498989300Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636465","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.503613700Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.503613700Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.550311800Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.562527600Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"58","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.562527600Z","evt":"step.start","kind":"findElements","driverId":"733fae8","target":"searchContext","meta":"[By.cssSelector: input[type='checkbox']]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.578834300Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636542","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.578834300Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"16","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.661185800Z","evt":"step.start","kind":"findElements","driverId":"733fae8","target":"searchContext","meta":"[By.cssSelector: input[type='radio']]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.674337200Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485636638","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.674337200Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.685908500Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.685908500Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.733805500Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.744806900Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"59","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.774416700Z","evt":"selenium","action":"Wait.until.start","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.774416700Z","evt":"step.start","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.775417400Z","evt":"selenium","action":"Wait.until.start","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.775417400Z","evt":"step.start","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.781274900Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.797325800Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"15","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.819253Z","evt":"selenium","action":"Wait.until.end","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.819253Z","evt":"step.ok","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait","durationMs":"44","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.819253Z","evt":"selenium","action":"Wait.until.end","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.819253Z","evt":"step.ok","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait","durationMs":"44","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.823252500Z","evt":"selenium","action":"Wait.until.start","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.824252500Z","evt":"step.start","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.824252500Z","evt":"selenium","action":"Wait.until.start","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.824252500Z","evt":"step.start","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.824252500Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.832434900Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"8","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.832434900Z","evt":"selenium","action":"Wait.until.end","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.832434900Z","evt":"step.ok","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait","durationMs":"8","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.832434900Z","evt":"selenium","action":"Wait.until.end","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.833441Z","evt":"step.ok","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait","durationMs":"9","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.833441Z","evt":"selenium","action":"Wait.until.start","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.833441Z","evt":"step.start","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.833441Z","evt":"selenium","action":"Wait.until.start","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.833441Z","evt":"step.start","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.833441Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.841435900Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"7","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.851543300Z","evt":"selenium","action":"Wait.until.end","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.852544200Z","evt":"step.ok","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait","durationMs":"18","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.852544200Z","evt":"selenium","action":"Wait.until.end","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.852544200Z","evt":"step.ok","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait","durationMs":"19","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.852544200Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"114b203","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.852544200Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"5000","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.855542Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"114b203","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.855542Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"3","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.856542400Z","evt":"selenium","action":"ImplicitWait.set.start","driverId":"3f45dfec","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.856542400Z","evt":"step.start","kind":"ImplicitWait.set","driverId":"na","target":"10000","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.858541500Z","evt":"selenium","action":"ImplicitWait.set.end","driverId":"3f45dfec","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.858541500Z","evt":"step.ok","kind":"ImplicitWait.set","driverId":"na","target":"timeout_configured","durationMs":"2","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.860539700Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.860539700Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.906025900Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.917142500Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"56","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.919139800Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.930883Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.930883Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:12.939892800Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"8","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:13.981676500Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:13.981676500Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.049918700Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.073665800Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://example.com/","durationMs":"93","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.091098Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.091098Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.208906Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.220610300Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"129","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.220610300Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.232998200Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"12","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.257175100Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.257175100Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.335706500Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.358174500Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://example.com/","durationMs":"100","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.437804100Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.437804100Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://example.com]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.468190400Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.474690900Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://example.com/","durationMs":"37","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.517992300Z","evt":"selenium","action":"WebDriver.get.start","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.517992300Z","evt":"step.start","kind":"get","driverId":"733fae8","target":"[https://www.selenium.dev/selenium/web/web-form.html]","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.642377200Z","evt":"selenium","action":"WebDriver.get.end","driverId":"733fae8","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.654434800Z","evt":"step.ok","kind":"get","driverId":"733fae8","target":"https://www.selenium.dev/selenium/web/web-form.html","durationMs":"136","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.654434800Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-text]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.666573900Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.666573900Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-password]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.678484Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.678484Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-textarea]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.689498700Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"10","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.689498700Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.name: my-select]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.700798100Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.700798100Z","evt":"step.start","kind":"findElement","driverId":"733fae8","target":"searchContext","meta":"[By.cssSelector: button[type='submit']]","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:14.712565400Z","evt":"step.ok","kind":"findElement","driverId":"733fae8","target":"searchContext","durationMs":"11","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.058732Z","evt":"step.ok","kind":"findElements","driverId":"733fae8","target":"searchContext","durationMs":"485639022","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.220425400Z","evt":"selenium","action":"Wait.until.start","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.220425400Z","evt":"step.start","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.220425400Z","evt":"selenium","action":"Wait.until.start","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.220425400Z","evt":"step.start","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait.","meta":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.751511400Z","evt":"selenium","action":"Wait.until.end","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.752074Z","evt":"step.ok","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait","durationMs":"531","error":null,"testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.752074Z","evt":"selenium","action":"Wait.until.end","driverId":"36665c11","sessionId":"na","testId":null,"thread":"main"}
+{"@t":"2025-09-05T02:17:15.752074Z","evt":"step.ok","kind":"Wait.until","driverId":"733fae8","target":"WebDriverWait","durationMs":"531","error":null,"testId":null,"thread":"main"}

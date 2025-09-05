@@ -20,6 +20,11 @@ class CypressConverter {
       actionBreakdown: {}
     };
     
+    // Actions that are automatically handled by modern frameworks
+    const autoHandledActions = new Set([
+      'findElement', 'findElements', 'ImplicitWait.set', 'Navigation.to'
+    ]);
+    
     let currentOrigin = null;
     let navigationHistory = [];
     
@@ -27,10 +32,13 @@ class CypressConverter {
       try {
         const event = JSON.parse(line);
         if (event.evt === 'step.ok') {
-          stats.totalActions++;
-          
           const action = event.kind;
           stats.actionBreakdown[action] = (stats.actionBreakdown[action] || 0) + 1;
+          
+          // Only count actions that require explicit conversion
+          if (!autoHandledActions.has(action)) {
+            stats.totalActions++;
+          }
           
           if (this.supportedActions.has(action)) {
             const step = this.convertStep(event, language, currentOrigin, navigationHistory);
@@ -45,7 +53,8 @@ class CypressConverter {
                 currentOrigin = origin;
               }
             }
-          } else {
+          } else if (!autoHandledActions.has(action)) {
+            // Only count as skipped if it's not auto-handled
             stats.skippedActions++;
             steps.push({
               action: this.generateComment(`Unsupported action: ${action}`, language),
